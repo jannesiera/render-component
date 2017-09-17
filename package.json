@@ -1,0 +1,27 @@
+{
+  "name": "render-component",
+  "version": "0.0.0",
+  "description": "A base web component to write functional web components. Combined with a virtual dom library this component removes all the boilerplate from your components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jannesiera/render-component.git"
+  },
+  "keywords": [
+    "web",
+    "components",
+    "functional",
+    "vdom",
+    "idom",
+    "render"
+  ],
+  "author": "Janne Siera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jannesiera/render-component/issues"
+  },
+  "homepage": "https://github.com/jannesiera/render-component#readme"
+}
