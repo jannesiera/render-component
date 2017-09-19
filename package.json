@@ -23,5 +23,16 @@
   "bugs": {
     "url": "https://github.com/jannesiera/render-component/issues"
   },
-  "homepage": "https://github.com/jannesiera/render-component#readme"
+  "homepage": "https://github.com/jannesiera/render-component#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-run": "^0.8.0"
+  },
+  "dependencies": {
+    "babel-plugin-transform-builtin-classes": "^0.4.0"
+  }
 }
