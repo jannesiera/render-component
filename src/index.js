@@ -24,7 +24,7 @@ const deserialize = {
         return null; // TODO try JSON.deserialize
     },
     array: (val) => { 
-        if(typeof val === 'array') return val;
+        if(Array.isArray(val)) return val;
         throw 'not implemented';
     },
     date: (val) => { 
@@ -75,7 +75,6 @@ class RenderComponent extends HTMLElement {
                         // TODO map prop name to attr name
                         this.setAttribute(key, val); // Sync attribute
                     }
-                    //this.render();
                 }
             });
             if(this.constructor.properties[key].attribute) {
