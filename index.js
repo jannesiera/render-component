@@ -44,7 +44,7 @@ var deserialize = {
         return null; // TODO try JSON.deserialize
     },
     array: function array(val) {
-        if (typeof val === 'array') return val;
+        if (Array.isArray(val)) return val;
         throw 'not implemented';
     },
     date: function date(val) {
@@ -101,7 +101,6 @@ var RenderComponent = function (_HTMLElement) {
                         // TODO map prop name to attr name
                         this.setAttribute(key, val); // Sync attribute
                     }
-                    //this.render();
                 }
             });
             if (_this.constructor.properties[key].attribute) {
