@@ -23,8 +23,14 @@ const deserialize = {
         if(typeof val === 'object') return val;
         return null; // TODO try JSON.deserialize
     },
-    array: (val) => { throw 'not implemented' },
-    date: (val) => { throw 'not implemented' },
+    array: (val) => { 
+        if(typeof val === 'array') return val;
+        throw 'not implemented';
+    },
+    date: (val) => { 
+        if(val instanceof window.Date) return val;
+        throw 'not implemented';
+    },
     number: (val) => {
         var val = Number(val);
         if(isNaN(val)) return null;

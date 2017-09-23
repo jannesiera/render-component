@@ -44,9 +44,11 @@ var deserialize = {
         return null; // TODO try JSON.deserialize
     },
     array: function array(val) {
+        if (typeof val === 'array') return val;
         throw 'not implemented';
     },
     date: function date(val) {
+        if (val instanceof window.Date) return val;
         throw 'not implemented';
     },
     number: function number(val) {

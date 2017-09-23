@@ -1,23 +1,25 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         babel: {
-		options: {
-            // TODO These plugins might not be necessary
-			plugins: [
-                "transform-es2015-classes",
-                ["transform-builtin-classes", {
-                    "globals": ["Array", "Error", "HTMLElement"]
-                }]
-            ],
-            
-			presets: ["es2015"]
-		},
-		dist: {
-			files: {
-				"./index.js": ["./src/index.js"]
-			}
-		}
-	},
+            options: {
+                // TODO These plugins might not be necessary
+                plugins: [
+                    /*
+                    "transform-es2015-classes",
+                    ["transform-builtin-classes", {
+                        "globals": ["Array", "Error", "HTMLElement"]
+                    }]
+                    */
+                ],
+                
+                presets: ["es2015"]
+            },
+            dist: {
+                files: {
+                    "./index.js": ["./src/index.js"]
+                }
+            }
+        },
         watch: {
             scripts: {
                 files: ["./src/**/*.js"],
