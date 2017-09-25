@@ -67,7 +67,7 @@ class RenderComponent extends HTMLElement {
                         val = deserialize[this.constructor.properties[key].type](val);
                         if(val === null) return;
                     }
-                    if(this[backingProperty] === val) return;
+                    //if(this[backingProperty] === val) return; // breaks referential types (objects)
                     this[backingProperty] = val;
                     // Schedule a render
                     this._scheduleRender();
